@@ -1,0 +1,106 @@
+:root {
+    --site-gradient: linear-gradient(135deg, #D6F0FF 0%, #C5EBE5 40%, #FAFAD2 75%, #FFE1DC 100%);
+}
+body {
+    background: var(--site-gradient);
+    min-height: 100vh;
+}
+.marquee {
+    background-color:lightblue;
+    border: 2px solid black;
+    margin: 10px 20px;
+    padding: 1%;
+    height: 50px;
+
+    font-weight: bold;
+    color: black;
+
+    behavior: "alternate";
+}
+.header {
+    background-color:lightseagreen;
+    border: 2px solid black;
+    margin: 0px 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 150%;
+}
+.main {
+    background-color:lightcoral;
+    border: 2px solid black;
+    margin: 10px 40px;
+    padding: 10px;
+}
+.playground {
+    background-color:lightskyblue;
+    border: 2px solid black;
+    margin: 10px 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.runawayButtonRunArea {
+    background: var(--site-gradient);
+    background-attachment: fixed;
+    border: 2px solid black;
+    margin: 0.8em max(20px, calc((100% - 600px) / 2));
+    padding: 10px;
+    min-height: 15em;
+    min-width: 400px;
+    max-width: 600px;
+}
+.runawayButtonHitbox {
+    position: relative;
+    transition: left 0.2s ease-out, top 0.2s ease-out;
+    width: fit-content;
+    left: 10px;
+    top: 10px;
+}
+.achievementBox {
+    background-color: lightpink;
+    margin: 10px 40px;
+}
+.achievementTxt {
+    text-align: center;
+    font-size: clamp(1rem, 8cqi, 4rem);
+    container-type: inline-size;
+    white-space: nowrap;
+}
+.footer {
+    background-color:lightgoldenrodyellow;
+    border: 2px solid black;
+    margin: 10px 40px;
+    padding: 10px;
+    text-align: center;
+}
+.translation {
+    background-color:lightpink;
+    border: 2px solid black;
+    margin: 0.8em;
+    padding: 10px;
+}
+.header .translation {
+    font-size: 1.2em;
+}
+.footer .translation {
+    font-size: 0.8em;
+    background-color:lightgoldenrodyellow;
+    border: 2px dashed black;
+    margin: 10px;
+    padding: 10px;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+p.links {
+    text-align: left;
+    padding-left: 20px;
+    list-style-type: none;
+}
+.icon {
+    vertical-align: middle;
+}

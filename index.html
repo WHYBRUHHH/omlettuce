@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omlettuce's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="marquee">
+        <marquee behavior="alternate"><p>
+            <button id="homeButton" onclick="document.location='index.html'" >Home Page</button>
+            <button id="achievementsButton" onclick="document.location='achievements.html'" >Acheivements Page</button>
+            <button id="duckButton" onclick="duckRain()">Click me or else I will eat your kneecaps, so don't mess with me! Click. I SAID CLICK DAMMIT! ... Pweaaaaaase?</button>
+            <button id="clearCookies" onclick="clearCookies()">Clear Cookies</button>
+        </p></marquee>
+    </div>
+    <div class="header">
+        <h1>Hallooo, I'm <a href="aboutMe" onclick="rickroll(event)">Omlettuce</a> (allegedly)</h1>
+        <h1 class="translation" id="headerTranslation">やっほー！<a href="aboutMe" onclick="rickroll(event)">オムレタス</a>です！（たぶんね）</h1>
+    </div>
+    <div class="main">
+        <p>I ♡ RUMBLE (VR game) so you probably found me from there, so haii. Otherwise, I like stuff like Rain World, Minecraft, Magic the Gathering, Helldivers 2, and more! If you feel like talking to me for some reason, I'm @omlettuce_ on Discord.</p>
+        <p class="translation">『RUMBLE（ランブル）』っていうVRゲームがだいすきだから、たぶんRUMBLEからここに来たんだよね？なら、やっほ〜！ほかにも、『レインワールド』、『Minecraft』、『マジック：ザ・ギャザリング』、『HELLDIVERS 2』とか、いろんなゲームがすき！なぜかぼくと話したくなったら、Discordで「@omlettuce_」をさがしてね！</p>
+        <p>"Why do I have a Japanese translation?", I hear you ask aloud to your screen. Well I'm SO glad you asked!!! I'm learning Japanese right now so I thought I may as well include a translation for anyone I meet who doesn't speak English, although I'm not very good at it yet, so I didn't do these translations by myself.</p>
+        <p class="translation">「なんで日本語のやくがあるの？」って、今きみは画面にむかって大きなこえで聞いたよね？うんうん、よくぞ聞いてくれた！！！じつは、ぼくは今、日本語をべんきょうしてるんだ！だから、英語がわからない人のために、日本語のやくもつけてみた！でも、まだ日本語があんまり上手じゃないから、このやくは一人で作ったわけじゃないんだよね。</p>
+    </div>
+    <div class="playground">
+        <div class="runawayButtonRunArea">
+            <div class="runawayButtonHitbox" onmouseenter="runAway(event)">
+            <button id="runawayButton" onclick="achievementGet('tenDollars', '$10')">Click me for $10!</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Made by Omlettuce, for Software Engineering class.</p>
+        <p class="translation">オムレタスがソフトウェアエンジニアリングのじゅぎょうのために作りました。</p>
+        <div class="links">
+                <p>
+                    <img class="icon" src="assets/images/youtube-icon.png" alt="YouTube" width="24" height="24"> <a href="https://youtube.com/channel/UCmrW7-oWgTtJOZjgJL2IM6A">YouTube</a>
+                    ✦
+                    <img class="icon" src="assets/images/discord-icon.png" alt="Discord" width="24" height="24"> <a href="https://discord.com/users/1108513176879911014">Discord</a>
+                    ✦
+                    <img class="icon" src="assets/images/twitch-icon.png" alt="Twitch" width="24" height="24"> <a href="https://twitch.tv/omlettuce_">Twitch</a>
+                    ✦
+                    <img class="icon" src="assets/images/hub-icon.png" alt="GitHub" width="24" height="24"> <a href="https://github.com/WHYBRUHHH">The Hub</a>
+                    ✦
+                    <img class="icon" src="assets/images/steam-icon.png" alt="Steam" width="24" height="24"> <a href="https://steamcommunity.com/id/WHYBRUHH/">Steam</a>
+                    ✦
+                    <img class="icon" src="assets/images/spotify-icon.png" alt="Spotify" width="24" height="24"> <a href="https://open.spotify.com/user/19bshkq60q6n5c4l28fm35cnw?si=6a8a90eefb6d4081">Spotify</a>
+                </p>
+        </div>
+    </div>
+</body>
+</html>
