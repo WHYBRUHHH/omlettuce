@@ -97,7 +97,6 @@ function duckRain() {
 function runAway(event) {
     const hitbox = document.querySelector(".runawayButtonHitbox");
     const runBox = document.querySelector(".runawayButtonRunArea");
-    const padding = hitbox.clientWidth / 2; // To ensure the hitbox doesn't go out of bounds
 
     let distance = 0;
     let newX = 0;
